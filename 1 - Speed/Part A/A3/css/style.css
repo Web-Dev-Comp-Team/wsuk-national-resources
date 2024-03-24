@@ -38,3 +38,85 @@ footer {
 
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+.container {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	animation-name: rotate-container;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.dot {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: red;
+}
+
+#red {
+	background-color: #F63D3A;
+	animation: animate-red 500ms ease-in-out 0s infinite alternate both;
+}
+
+#yellow {
+	background-color: #FDA543;
+	animation: animate-yellow 500ms ease-in-out 0s infinite alternate both;
+}
+
+#green {
+	background-color: #19A68C;
+	animation: animate-green 500ms ease-in-out 0s infinite alternate both;
+}
+
+#blue {
+	background-color: #193B48;
+	animation: animate-blue 500ms ease-in-out 0s infinite alternate both;
+}
+
+@keyframes animate-red {
+	from {
+		transform: translate(50px, -25px);
+	}
+	to {
+		transform: translate(25px, -50px);
+	}
+}
+
+@keyframes animate-yellow {
+	from {
+		transform: translate(0px, 25px);
+	}
+	to {
+		transform: translate(-25px, 50px);
+	}
+}
+
+@keyframes animate-green {
+	from {
+		transform: translate(0px, -25px);
+	}
+	to {
+		transform: translate(25px, -50px);
+	}
+}
+
+@keyframes animate-blue {
+	from {
+		transform: translate(-50px, 25px);
+	}
+	to {
+		transform: translate(-25px, 50px);
+	}
+}
+
+@keyframes rotate-container {
+	from {
+		transform: rotate(45deg);
+	}
+	to {
+		transform: rotate(405deg);
+	}
+}
