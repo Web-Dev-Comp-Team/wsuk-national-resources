@@ -5,41 +5,51 @@ header,
 main,
 footer,
 div {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #f5f5f5;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 main {
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(80vh - 20px);
-  margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 20px);
+    margin: 0 auto;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  border-top: 1px solid #ddd;
-  text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    text-align: center;
 }
 
 #copyrightYear {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+img {
+    height: 50%;
+    width: auto;
+    filter: grayscale(100%);
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
