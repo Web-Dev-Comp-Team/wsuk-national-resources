@@ -37,3 +37,23 @@ footer {
 }
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+.square {
+	width: 300px;
+	height: 300px;
+	animation-name: morph-square;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes morph-square {
+	from {
+		background-color: yellow;
+		border-radius: 0%;
+	}
+	to {
+		background-color: red;
+		border-radius: 50%;
+	}
+}
