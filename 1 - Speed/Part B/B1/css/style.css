@@ -37,3 +37,21 @@ footer {
 }
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+p {
+	margin: 0;
+}
+
+canvas {
+	width: 460px;
+	height: 320px;
+	background-color: green;
+}
+
+.options {
+	display: flex;
+}
+
+select {
+	margin: 0px 10px;
+}
