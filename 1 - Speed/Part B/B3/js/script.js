@@ -5,13 +5,30 @@ const redSlider = document.querySelector("#red");
 const greenSlider = document.querySelector("#green");
 const blueSlider = document.querySelector("#blue");
 
-var redValue = redSlider.value;
+var redHex = updateHex(redSlider);
+var greenHex = updateHex(greenSlider);
+var blueHex = updateHex(blueSlider);
 
-redSlider.addEventListener("change", () => {
-    redValue = redSlider.value;
-    updateColorBlock;
+redSlider.addEventListener("input", () => {
+    redHex = updateHex(redSlider);
+    updateColorBlock();
+});
+
+greenSlider.addEventListener("input", () => {
+    greenHex = updateHex(greenSlider);
+    updateColorBlock();
+});
+
+blueSlider.addEventListener("input", () => {
+    blueHex = updateHex(blueSlider);
+    updateColorBlock();
 });
 
 function updateColorBlock() {
-    colorBlock.style.backgroundColor = redValue;
+    console.log(redHex, greenHex, blueHex);
+    colorBlock.style.backgroundColor = '#' + redHex + greenHex + blueHex;
+}
+
+function updateHex(slider) {
+    return parseInt(slider.value).toString(16);
 }
