@@ -43,3 +43,45 @@ footer {
 
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+:root{
+  --green:#a9db71;
+  --yellow: #eed16b;
+  --red: #ee9395;
+}
+
+.container{
+  padding: 20px;
+  border: solid;
+}
+
+.face{
+  width: 200px;
+  height: 200px;
+  background-color:var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-timing-function: linear;
+}
+
+
+.mood{
+  rotate: 90deg;
+  font-size: 50px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+button{
+  font-size: large;
+  padding: 10px;
+  width: 50px;
+}
+

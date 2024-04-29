@@ -58,3 +58,22 @@ footer {
 }
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+.ball{
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-direction: alternate;
+}
+
+@keyframes bounce{
+
+	to{
+		transform: translateY(240px);
+		height: 30px;
+	}
+	90%{
+		height: 50px;
+	}
+}

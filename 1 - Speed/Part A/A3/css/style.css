@@ -38,3 +38,70 @@ footer {
 
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+.container{
+	animation: spin 3s linear infinite;
+}
+
+.ball{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	animation: 0.75s ease-in-out infinite alternate;
+}
+
+#red{
+	background-color: #F63D3A;
+	transform: translateY(35px);
+	animation-name: red;
+}
+
+#green{
+	background-color: #19A68C;
+	transform: translate(40px, 25px);
+	animation-name: green;
+}
+
+#blue{
+	background-color: #193B48;
+	transform: translateY(15px);
+	animation-name: blue;
+}
+
+#yellow{
+	background-color: #FDA543;
+	transform: translate(-40px,-75px);
+	animation-name: yellow;
+}
+
+@keyframes spin {
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+@keyframes red {
+	to {
+		transform: translateY(15px);
+	}
+}
+
+@keyframes green {
+	to {
+		transform: translate(60px, 25px);
+	}
+}
+
+@keyframes blue {
+	to {
+		transform: translateY(35px);
+	}
+}
+
+@keyframes yellow {
+	to {
+		transform: translate(-60px,-75px);
+	}
+}
