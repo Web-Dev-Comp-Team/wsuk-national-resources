@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+header{
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+header img{
+    height: 75px;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+a{
+    color: rgb(152, 152, 152);
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a:hover{
+    color: white;
+}
+
+/* Landing */
+
+#landing-page{
+    background-color: #009fe3;
+    padding: 75px 25px;
+    color: white;
+}
+
+#landing-page h1{
+    padding: 10px 0;
+    font-size: 50px;
+}
+
+#landing-page p{
+    color: #88d2f1;
+}
+
+/* Intro */
+
+#intro{
+    background-color: #e7e7e7;
+    display: flex;
+    padding: 20px 20px;
+}
+
+#introText{
+    width: 66%;
+}
+
+#introText h2, #contact h2{
+    font-size: 30px;
+    padding: 20px 0;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #b6b6b6;
+    margin-bottom: 10px;
+}
+
+#introText p{
+    padding: 10px 0;
+}
+
+#introText button{
+    background-color: #621360;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+#contact{
+    width: 33%;
+    padding-left: 30px;
+}
+
+#phone{
+    padding-top: 20px;
+}
+
+#contact a{
+    color: #009fe3;
+}
+
+#contact strong{
+    font-weight: 500;
+}
+
+/* find out more */
+
