@@ -112,3 +112,7 @@ footer {
 }
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD IF REQURED*/
+
+.container{
+    background: linear-gradient(to right, #FF0000, #0000FF);
+}
