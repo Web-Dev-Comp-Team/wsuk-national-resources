@@ -1,0 +1,26 @@
+text {
+    color: #212121;
+}
+
+header {
+    border: 1px solid black;
+    text-align: center;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.header-links-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
