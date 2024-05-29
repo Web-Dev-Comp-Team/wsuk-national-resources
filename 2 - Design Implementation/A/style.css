@@ -1,5 +1,25 @@
 text {
+    /* Not working */
     color: #212121;
+}
+
+/* Import fonts */
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("./media/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Asap-SemiBoldItalic";
+    src: url("./media/fonts/Asap-SemiBoldItalic.ttf") format("truetype");
+}
+
+a {
+    font-family: "Roboto-Bold";
+}
+
+h1 {
+    font-family: "Asap-SemiBoldItalic";
 }
 
 header {
