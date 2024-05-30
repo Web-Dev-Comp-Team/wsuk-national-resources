@@ -1,17 +1,24 @@
-text {
-    /* Not working */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
     color: #212121;
+
+    border: 1px solid green;
 }
 
 /* Import fonts */
 @font-face {
     font-family: "Roboto-Bold";
-    src: url("./media/fonts/Roboto-Bold.ttf") format("truetype");
+    src: url("../media/fonts/Roboto-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Asap-SemiBoldItalic";
-    src: url("./media/fonts/Asap-SemiBoldItalic.ttf") format("truetype");
+    src: url("../media/fonts/Asap-SemiBoldItalic.ttf") format("truetype");
 }
 
 a {
@@ -33,14 +40,4 @@ header {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 1200px;
-    margin: 0 auto;
-    border: 1px solid green;
 }
