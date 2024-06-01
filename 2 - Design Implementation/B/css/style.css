@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: "OpenSans-Bold";
-    src: url("../media/fonts/open sans/OpenSans-Bold.ttf");
+    src: url("../media/fonts/open sans/OpenSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "OpenSans-Light";
-    src: url("../media/fonts/open sans/OpenSans-Light.ttf");
+    src: url("../media/fonts/open sans/OpenSans-Light.ttf") format("truetype");
 }
 
 a {
@@ -57,6 +57,7 @@ header > section > a:active {
 #page-head-section {
     display: flex;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 #header-uop-logo {
@@ -183,5 +184,51 @@ h1 {
     color: #621360;
     font-size: 45px;
     font-family: "OpenSans-Light";
-    margin: 15px 0 0 50px;
+    margin: 0 0 0 50px;
+}
+
+/** ABOUT US SECTION **/
+#banner_1-container {
+    justify-content: center;
+    color: white;
+}
+
+#banner_1 {
+    position: absolute;
+    width: 1400px;
+    height: 350px;
+    z-index: 0;
+}
+
+#banner_1-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    top: 245px;
+    left: calc(100% - 300px);
+    background-color: #3c023c;
+    font-family: "OpenSans-Light";
+    font-size: 22px;
+    opacity: 70%;
+}
+
+#banner_1-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 800px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    top: 245px;
+    left: calc(100% - 800px);
+    background-color: #3c023c;
 }
