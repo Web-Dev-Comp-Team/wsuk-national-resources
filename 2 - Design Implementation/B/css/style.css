@@ -21,14 +21,14 @@ a {
 /*todo add mobile */
 @media (min-width: 1200px) {
     main {
-        width: 1600px;
+        width: 1400px;
     }
 }
 
 main {
     font-family: "OpenSans-Regular";
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /** HEADER **/
@@ -60,13 +60,13 @@ header > section > a:active {
 }
 
 #header-uop-logo {
-    width: 10%;
+    width: 8%;
     height: auto;
     margin: 25px;
 }
 
 #header-bars-and-title {
-    width: 95%;
+    width: 92%;
 }
 
 /** DROPMENU BAR **/
