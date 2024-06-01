@@ -18,7 +18,6 @@ main {
 .dropmenu-item {
     display: flex;
     position: relative;
-    border: 1px green solid;
 }
 
 .dropmenu-text {
@@ -53,6 +52,14 @@ main {
     color: white;
     padding: 0;
     margin: 0;
+}
+
+.dropmenu-item:hover {
+    background-color: #0078b4;
+}
+
+.dropmenu-item:hover .dropmenu-arrow {
+    background-color: #0078b4;
 }
 
 .dropmenu-item:hover .dropmenu-list {
