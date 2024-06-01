@@ -16,7 +16,7 @@ a {
 /*todo add mobile */
 @media (min-width: 1200px) {
     main {
-        width: 1800px;
+        width: 1700px;
     }
 }
 
@@ -39,15 +39,12 @@ header > section {
     width: 33%;
 }
 
-header > section > p {
+header > section > a {
     margin: 10px;
-}
-
-header > section > p > a {
     color: white;
 }
 
-header > section > p > a:active {
+header > section > a:active {
     color: #009ee2;
 }
 
@@ -147,6 +144,35 @@ header > section > p > a:active {
     font-family: "OpenSans-Bold";
 }
 
-#subbar > p > a {
+#subbar > a {
     color: black;
+}
+
+#subbar > a:active {
+    color: #009ee2;
+}
+
+/** backlink list **/
+#backlink-list {
+    display: flex;
+    font-size: x-small;
+    margin: 15px 0 0 50px;
+
+    border: 1px black solid;
+}
+
+#backlink-list > a {
+    margin: 0 5px;
+}
+
+#backlink-list > a:link {
+    color: #0078b4;
+}
+
+#backlink-list > a:active {
+    color: #009ee2;
+}
+
+#backlink-list > a:visited {
+    color: #621360;
 }
