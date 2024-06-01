@@ -9,7 +9,7 @@ main {
 
 #dropmenu-bar {
     display: flex;
-    /* justify-content: right; */
+    justify-content: right;
     background-color: #3c023c;
     color: white;
     border: 1px black solid;
