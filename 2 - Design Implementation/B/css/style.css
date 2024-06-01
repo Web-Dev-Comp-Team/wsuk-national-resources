@@ -3,6 +3,7 @@
     src: url("../media/fonts/open sans/OpenSans-Regular.ttf") format("truetype");
 }
 
+/** MAIN **/
 /*todo add mobile */
 @media (min-width: 1200px) {
     main {
@@ -16,7 +17,34 @@ main {
     border: 2px greenyellow solid;
 }
 
+/** HEADER **/
 header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header > section {
+    background-color: #621360;
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+}
+
+header > section > p {
+    margin: 10px;
+}
+
+header > section > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+header > section > p > a:active {
+    color: #009ee2;
+}
+
+/** page-head-section **/
+#page-head-section {
     display: flex;
     width: 100%;
 }
@@ -93,16 +121,18 @@ header {
 
 .dropmenu-list > li {
     padding: 5px 20%;
+    list-style: none;
 }
 
 .dropmenu-list > li:hover {
     background-color: #621360;
 }
+/** Header done **/
 
-/** SUBBAR **/
 #subbar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 0;
+    background-color: lightgray;
 }
