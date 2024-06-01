@@ -3,16 +3,41 @@
     src: url("../media/fonts/open sans/OpenSans-Regular.ttf") format("truetype");
 }
 
-main {
-    font-family: "OpenSans-Regular";
+/*todo add mobile */
+@media (min-width: 1200px) {
+    main {
+        width: 1800px;
+    }
 }
 
+main {
+    font-family: "OpenSans-Regular";
+    margin: 0 auto;
+    border: 2px greenyellow solid;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+#header-uop-logo {
+    width: 5%;
+    height: auto;
+    margin: 25px;
+}
+
+#header-bars-and-title {
+    width: 95%;
+    border: 1px black solid;
+}
+
+/** DROPMENU BAR **/
 #dropmenu-bar {
     display: flex;
     justify-content: right;
     background-color: #3c023c;
     color: white;
-    border: 1px black solid;
 }
 
 .dropmenu-item {
@@ -72,4 +97,12 @@ main {
 
 .dropmenu-list > li:hover {
     background-color: #621360;
+}
+
+/** SUBBAR **/
+#subbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
 }
