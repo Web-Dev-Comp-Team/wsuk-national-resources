@@ -8,6 +8,11 @@
     src: url("../media/fonts/open sans/OpenSans-Bold.ttf");
 }
 
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../media/fonts/open sans/OpenSans-Light.ttf");
+}
+
 a {
     text-decoration: none;
 }
@@ -16,14 +21,14 @@ a {
 /*todo add mobile */
 @media (min-width: 1200px) {
     main {
-        width: 1700px;
+        width: 1600px;
     }
 }
 
 main {
     font-family: "OpenSans-Regular";
     margin: 0 auto;
-    border: 2px greenyellow solid;
+    font-size: 14px;
 }
 
 /** HEADER **/
@@ -55,14 +60,13 @@ header > section > a:active {
 }
 
 #header-uop-logo {
-    width: 5%;
+    width: 10%;
     height: auto;
     margin: 25px;
 }
 
 #header-bars-and-title {
     width: 95%;
-    border: 1px black solid;
 }
 
 /** DROPMENU BAR **/
@@ -86,7 +90,7 @@ header > section > a:active {
     justify-content: center;
 
     /*todo improve */
-    padding: 1px 25px 1px 25px;
+    padding: 1px 20px;
 }
 
 .dropmenu-arrow {
@@ -155,10 +159,8 @@ header > section > a:active {
 /** backlink list **/
 #backlink-list {
     display: flex;
-    font-size: x-small;
+    font-size: smaller;
     margin: 15px 0 0 50px;
-
-    border: 1px black solid;
 }
 
 #backlink-list > a {
@@ -175,4 +177,11 @@ header > section > a:active {
 
 #backlink-list > a:visited {
     color: #621360;
+}
+
+h1 {
+    color: #621360;
+    font-size: 45px;
+    font-family: "OpenSans-Light";
+    margin: 15px 0 0 50px;
 }
