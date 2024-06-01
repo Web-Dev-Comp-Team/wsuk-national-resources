@@ -3,6 +3,15 @@
     src: url("../media/fonts/open sans/OpenSans-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../media/fonts/open sans/OpenSans-Bold.ttf");
+}
+
+a {
+    text-decoration: none;
+}
+
 /** MAIN **/
 /*todo add mobile */
 @media (min-width: 1200px) {
@@ -36,7 +45,6 @@ header > section > p {
 
 header > section > p > a {
     color: white;
-    text-decoration: none;
 }
 
 header > section > p > a:active {
@@ -127,12 +135,18 @@ header > section > p > a:active {
 .dropmenu-list > li:hover {
     background-color: #621360;
 }
-/** Header done **/
 
+/** subbar **/
 #subbar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 0;
     background-color: lightgray;
+    height: 20%;
+    font-family: "OpenSans-Bold";
+}
+
+#subbar > p > a {
+    color: black;
 }
