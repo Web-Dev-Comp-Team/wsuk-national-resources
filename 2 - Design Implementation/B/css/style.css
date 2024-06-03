@@ -153,7 +153,6 @@ header > section > a {
     color: black;
 }
 
-
 /** backlink list **/
 #backlink-list {
     display: flex;
@@ -234,8 +233,7 @@ h1 {
 /** about-text-container **/
 #about-text-container {
     display: flex;
-    background-color: red;
-    height: 200px;
+    height: 350px;
 }
 
 #about-link-list {
@@ -249,17 +247,28 @@ h1 {
     list-style: square;
     list-style-position: outside;
     padding-right: 20px;
+    font-family: "OpenSans-Bold";
+    font-size: 16px;
+    color: #621360;
 }
 
 #about-link-list > li {
-    margin: 5px;
-}
-
-#about-link-list > li > a {
-    font-family: "OpenSans-Bold";
-    color: #621360;
+    margin: 10px;
 }
 
 #about-link-list > li > a:active {
     color: #009ee2;
+}
+
+#about-text-container > p {
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+#about-text-container > img {
+    margin-top: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
 }
