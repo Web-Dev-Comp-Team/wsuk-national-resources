@@ -287,9 +287,8 @@ h1 {
 }
 
 /** experts-section **/
-
+/** Cards **/
 #card-container {
-    border: 1px black solid;
     height: 220px;
     display: flex;
 }
@@ -300,12 +299,15 @@ h1 {
     width: 440px;
     height: 220px;
     display: flex;
-    position: absolute;
     margin: 0 20px;
 }
 
 #left-card {
     margin-left: 0;
+}
+
+#right-card {
+    margin-right: 0;
 }
 
 .card > img {
@@ -316,6 +318,7 @@ h1 {
 
 #card-details {
     height: 125px;
+    width: 100%;
     margin-top: 15px;
     margin-left: 20px;
     display: flex;
@@ -332,13 +335,15 @@ h1 {
 #card-details > p {
     margin: 0;
     margin-bottom: 5px;
+    font-size: 10px;
 }
 
+/** Card arrows **/
 .card > a {
     /* Positioning */
     padding: 10px;
     height: 25px;
-    width: 90px;
+    width: 200px;
     position: relative;
     right: 0%;
     top: calc(100% - 45px);
