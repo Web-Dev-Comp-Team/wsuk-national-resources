@@ -156,7 +156,7 @@ header > section > a {
     align-items: center;
     justify-content: space-evenly;
     margin: 0;
-    background-color: lightgray;
+    background-color: #eeeeee;
     height: 20%;
     font-family: "OpenSans-Bold";
 }
@@ -250,7 +250,7 @@ h1 {
 }
 
 #about-link-list {
-    background-color: lightgray;
+    background-color: #eeeeee;
     height: 100%;
     margin: 0;
     display: flex;
@@ -287,3 +287,89 @@ h1 {
 }
 
 /** experts-section **/
+
+#card-container {
+    border: 1px black solid;
+    height: 220px;
+    display: flex;
+}
+
+.card {
+    background-color: #eeeeee;
+    /* (1400 - 80) / 3 */
+    width: 440px;
+    height: 220px;
+    display: flex;
+    position: absolute;
+    margin: 0 20px;
+}
+
+#left-card {
+    margin-left: 0;
+}
+
+.card > img {
+    width: 125px;
+    height: 125px;
+    margin: 15px 5px;
+}
+
+#card-details {
+    height: 125px;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#card-details > h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #0078b4;
+}
+
+#card-details > p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.card > a {
+    /* Positioning */
+    padding: 10px;
+    height: 25px;
+    width: 90px;
+    position: relative;
+    right: 0%;
+    top: calc(100% - 45px);
+    /* Text centering */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* Aesthetics */
+    background-color: white;
+    color: #0078b4;
+    font-family: "OpenSans-Bold";
+}
+
+#card-arrow {
+    margin-left: 5px;
+}
+
+.card > a:hover #card-arrow {
+    animation-name: hover-card-arrow;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes hover-card-arrow {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(7px, 0);
+    }
+}
