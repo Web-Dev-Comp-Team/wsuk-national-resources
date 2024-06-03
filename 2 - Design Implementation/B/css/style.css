@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+a:active {
+    color: #009ee2;
+}
+
 /** MAIN **/
 /*todo add mobile */
 @media (min-width: 1200px) {
@@ -47,10 +51,6 @@ header > section {
 header > section > a {
     margin: 10px;
     color: white;
-}
-
-header > section > a:active {
-    color: #009ee2;
 }
 
 /** page-head-section **/
@@ -153,9 +153,6 @@ header > section > a:active {
     color: black;
 }
 
-#subbar > a:active {
-    color: #009ee2;
-}
 
 /** backlink list **/
 #backlink-list {
@@ -188,15 +185,16 @@ h1 {
 }
 
 /** ABOUT US SECTION **/
+/** banner_1-container **/
 #banner_1-container {
     justify-content: center;
     color: white;
+    width: 1400px;
+    height: 350px;
 }
 
 #banner_1 {
     position: absolute;
-    width: 1400px;
-    height: 350px;
     z-index: 0;
 }
 
@@ -231,4 +229,37 @@ h1 {
     top: 245px;
     left: calc(100% - 800px);
     background-color: #3c023c;
+}
+
+/** about-text-container **/
+#about-text-container {
+    display: flex;
+    background-color: red;
+    height: 200px;
+}
+
+#about-link-list {
+    background-color: lightgray;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: square;
+    list-style-position: outside;
+    padding-right: 20px;
+}
+
+#about-link-list > li {
+    margin: 5px;
+}
+
+#about-link-list > li > a {
+    font-family: "OpenSans-Bold";
+    color: #621360;
+}
+
+#about-link-list > li > a:active {
+    color: #009ee2;
 }
