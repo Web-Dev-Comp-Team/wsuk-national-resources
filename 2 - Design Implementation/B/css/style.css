@@ -21,6 +21,13 @@ a:active {
     color: #009ee2;
 }
 
+hr {
+    border: none;
+    height: 4px;
+    background-color: #3c023c;
+    margin: 15px;
+}
+
 /** MAIN **/
 /*todo add mobile */
 @media (min-width: 1200px) {
