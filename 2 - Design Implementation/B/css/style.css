@@ -28,6 +28,11 @@ hr {
     margin: 15px;
 }
 
+h2 {
+    color: #3c023c;
+    margin-left: 50px;
+}
+
 /** MAIN **/
 /*todo add mobile */
 @media (min-width: 1200px) {
@@ -217,6 +222,7 @@ h1 {
     top: 245px;
     left: calc(100% - 300px);
     background-color: #3c023c;
+    color: white;
     font-family: "OpenSans-Light";
     font-size: 22px;
     opacity: 70%;
@@ -256,7 +262,7 @@ h1 {
     padding-right: 20px;
     font-family: "OpenSans-Bold";
     font-size: 16px;
-    color: #621360;
+    color: #3c023c;
 }
 
 #about-link-list > li {
@@ -279,3 +285,5 @@ h1 {
     width: 300px;
     height: 300px;
 }
+
+/** experts-section **/
