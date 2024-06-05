@@ -139,6 +139,7 @@ a {
 /* Third / Bottom nav */
 
 .third-nav {
+    display: flex;
     background-color: #f6f4f5;
     justify-content: space-evenly;
     display: none;
@@ -156,15 +157,7 @@ a {
 
 /* second nav hover */
 
-#study-third-nav {
-    display: flex;
-    position: absolute;
-    width: calc(100% - 200px);
-    left: calc(0px + 200px);
-    top: 97px;
-}
-
-/* .second-nav-item:hover .third-nav{
+/* .study-nav:hover .third-nav{
     display: flex;
 } */
 
