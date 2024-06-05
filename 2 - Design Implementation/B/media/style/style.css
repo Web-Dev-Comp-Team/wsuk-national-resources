@@ -56,6 +56,10 @@ is it better to have ul and li for hoverable nav's for to use anchors */
     color: #0078b4;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* header */
 
 /* top nav */
@@ -136,17 +140,25 @@ a {
     background-color: #0078b4;
 }
 
+#sidebar-menu {
+    display: none;
+}
+
 /* Third / Bottom nav */
 
 .third-nav {
     background-color: #f6f4f5;
     justify-content: space-evenly;
     display: none;
+    position: absolute;
+    width: calc(100% - 200px);
+    left: calc(0px + 200px);
+    top: 97px;
 }
 
 .third-nav-item {
     padding: 0.8rem 0.5rem;
-    font-size: smaller;
+    font-size: small;
     transition: 0.3s;
 }
 
@@ -156,17 +168,33 @@ a {
 
 /* second nav hover */
 
-#study-third-nav {
-    display: flex;
-    position: absolute;
-    width: calc(100% - 200px);
-    left: calc(0px + 200px);
-    top: 97px;
-}
-
-/* .second-nav-item:hover .third-nav{
+/* #study-third-nav {
     display: flex;
 } */
+
+.study-nav:hover #study-third-nav{
+    display: flex;
+}
+
+.student-nav:hover #student-third-nav{
+    display: flex;
+}
+
+.research-nav:hover #research-third-nav{
+    display: flex;
+}
+
+.collaborate-nav:hover #collaborate-third-nav{
+    display: flex;
+}
+
+.news-nav:hover #news-third-nav{
+    display: flex;
+}
+
+.about-nav:hover #about-third-nav{
+    display: flex;
+}
 
 /* page path and H1*/
 
@@ -185,7 +213,7 @@ a {
 }
 
 #page-path {
-    padding-bottom: 0.5rem;
+    padding: 2rem 0 0.5rem 0;
 }
 
 #path-and-title {
@@ -438,4 +466,39 @@ main {
 
 #secondary-footer a {
     color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+    
+    .second-nav-item {
+        display: none;
+        padding-right: 1rem;
+        align-items: center;
+    }
+
+    #second-nav {
+        background-color: #3c023c;
+        height: 3.1rem;
+    }
+
+    #sidebar-menu {
+        display: block;
+    }
+    
+    #sidebar-button {
+        border: none;
+        background-color: #0078b4;
+        color: #ffffff;
+        display: block;
+        padding: 1rem;
+        height: 100%;
+    }
+
+    .down-arrow-container {
+        display: none;
+    }
+}
+
+@media (max-width: 915px) {
+    
 }
