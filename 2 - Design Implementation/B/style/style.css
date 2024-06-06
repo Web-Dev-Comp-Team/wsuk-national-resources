@@ -1,0 +1,91 @@
+:root {
+    --dark-purple: #3c023c;
+    --light-purple: #621360;
+    --dark-blue: #0078b4;
+    --light-blue: #009ee2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'open-sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url(../media/fonts/openSans/OpenSans-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+/* top header */
+
+#top-nav {
+    background-color: var(--light-purple);
+    width: 600px;
+    margin-left: auto;
+    display: flex;
+    justify-content: right;
+    font-size: small;
+}
+
+#top-nav a {
+    color: white;
+    padding: 1rem;
+}
+
+/* middle nav */
+
+#main-header-content {
+    width: 100%;
+}
+
+#main-header {
+    display: flex;
+}
+
+#main-header img {
+    height: 200px;
+}
+
+#main-nav {
+    display: flex;
+    background-color: var(--dark-purple);
+    justify-content: right;
+    align-items: center;
+}
+
+#main-nav a {
+    color: white;
+    padding: 1rem 0 1rem 1rem;
+}
+
+#main-nav:nth-last-child(2) {
+    padding: 1rem;
+}
+
+.down-arrow {
+    padding: 1rem;
+    background-color: #621360;
+    margin-left: 1rem;
+}
+
+.main-nav-item:hover a, .main-nav-item:hover span{
+    background-color: var(--light-blue);
+}
+
+/* Third nav */
+
+
+
+.third-nav {
+    display: none;
+}
+
+#study:hover {
+
+}
