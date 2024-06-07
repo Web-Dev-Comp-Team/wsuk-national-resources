@@ -26,14 +26,14 @@ a {
 
 #top-nav {
     background-color: var(--light-purple);
-    width: 600px;
+    width: 500px;
     margin-left: auto;
     display: flex;
     justify-content: right;
-    font-size: small;
+    font-size: 12px;
 }
 
-#top-nav a {
+.top-nav-item {
     color: white;
     padding: 1rem;
 }
@@ -50,6 +50,7 @@ a {
 
 #main-header img {
     height: 200px;
+    padding: 0 2rem 2rem 2rem;
 }
 
 #main-nav {
@@ -59,33 +60,155 @@ a {
     align-items: center;
 }
 
-#main-nav a {
+.main-nav-item {
     color: white;
     padding: 1rem 0 1rem 1rem;
-}
-
-#main-nav:nth-last-child(2) {
-    padding: 1rem;
+    font-size: small;
+    display: block;
 }
 
 .down-arrow {
     padding: 1rem;
     background-color: #621360;
     margin-left: 1rem;
+    font-size: small;
 }
 
-.main-nav-item:hover a, .main-nav-item:hover span{
-    background-color: var(--light-blue);
+.main-nav-item:hover, .down-arrow:hover, .main-nav-item:hover .down-arrow, .down-arrow:hover .main-nav-item {
+    background-color: var(--light-blue); 
 }
 
 /* Third nav */
 
-
-
 .third-nav {
     display: none;
+    position: absolute;
+    background-color: rgb(216, 216, 216);
+    top: 99px;
+    right: 0;
+    width: calc(100% - 236px);
+    justify-content: space-evenly;
 }
 
-#study:hover {
+.third-nav-item {
+    padding: 0.8rem;
+    color: black;
+    font-size: 12px;
+}
 
+#study:hover #study-nav {
+    display: flex;
+}
+
+#student:hover #student-nav {
+    display: flex;
+}
+
+#research:hover #research-nav {
+    display: flex;
+}
+
+#collaborate:hover #collaborate-nav {
+    display: flex;
+}
+
+#news:hover #news-nav {
+    display: flex;
+}
+
+#about:hover #about-nav {
+    display: flex;
+}
+
+/* path */
+
+#path {
+    padding: 3rem 0 2rem 1rem;
+}
+
+#path a {
+    color: var(--dark-blue);
+}
+
+#title {
+    padding: 0 0 0 1rem;
+    color: var(--light-purple);
+}
+
+#path>span {
+    font-size: 8px;
+}
+
+#path a:last-child {
+    color: var(--light-purple);
+}
+
+/* landing page */
+
+#landing>img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+#landing>h2 {
+    background-color: var(--light-purple);
+    color: white;
+    opacity: 70%;
+    padding: 1rem 2rem;
+    position: absolute;
+    right: 0;
+    top: 535px;
+}
+
+#landing>p {
+    background-color: var(--dark-purple);
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 600px;
+}
+
+#landing-description {
+    display: flex;
+}
+
+#landing-description>aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(203, 203, 203);
+    padding: 0 2rem 0 3rem;
+}
+
+#landing-description>aside>ul>li {
+    list-style: square;
+    padding: .5rem 0;
+    color: #3c023c;
+    font-size: large;
+}
+
+#landing-description>p {
+    padding: 3rem 0 1rem 2rem;
+}
+
+#landing-description>img {
+    padding: 2rem 1rem;
+    height: 300px;
+}
+
+/* our experts */
+
+.main-section {
+    border-top: #3c023c solid;
+    padding: 1rem 0;
+    margin: 1rem 2rem;
+}
+
+
+
+#our-experts>h2 {
+    padding: 0 3rem;
 }
