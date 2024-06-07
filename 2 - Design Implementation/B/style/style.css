@@ -212,3 +212,25 @@ a {
 #our-experts>h2 {
     padding: 0 3rem;
 }
+
+/* We Work With */
+
+#horizontal-scroll-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+}
+
+.five-card-container {
+    display: flex;
+    gap: 1rem;
+    scroll-snap-stop: start;
+    scroll-snap-align: start;
+}
+
+.five-card-container>img {
+    object-fit: cover;
+    width: calc(89vw / 5);
+    height: 120px;
+}
